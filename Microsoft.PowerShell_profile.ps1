@@ -1,4 +1,4 @@
-oh-my-posh init pwsh --config "C:\Users\prime\AppData\Local\Programs\oh-my-posh\themes\avit.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config "C:\Users\prime\Documents\PowerShell\themes\synth.omp.json" | Invoke-Expression
 
 Remove-Alias -Name r -ErrorAction SilentlyContinue
 
@@ -17,12 +17,16 @@ function ... {
     cd ...
 }
 
+function sw {
+    wsl --shutdown
+}
+
 function pg {
     Set-Location -Path "E:\space\playground"
 }
 
 function repo {
-    Set-Location -Path "E:\repositories"
+    Set-Location -Path "E:\archive\repositories"
 }
 
 function space {
