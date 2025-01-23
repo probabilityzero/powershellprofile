@@ -62,43 +62,43 @@
             "npm_icon": " <#cc3a3a>\ue5fa</> ",
             "yarn_icon": " <#348cba>\ue6a7</>"
           }, 
-          "template": "\ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}", 
+          "template": "\ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ", 
           "style": "powerline",
           "type": "node"
         },
         {
           "foreground": "#ffffff",  
-          "template": "\ue738 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}", 
+          "template": "\ue738 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ", 
           "style": "powerline",
           "type": "java"
         },
         {
           "foreground": "#0d6da8",  
-          "template": "\ue77f {{ if .Unsupported }}\uf071{{ else }}{{ .Full }}{{ end }}", 
+          "template": "\ue77f {{ if .Unsupported }}\uf071{{ else }}{{ .Full }}{{ end }} ", 
           "style": "powerline",
           "type": "dotnet"
         },
         {
           "foreground": "#06aad5",  
-          "template": "\ue626 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}", 
+          "template": "\ue626 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ", 
           "style": "powerline",
           "type": "go"
         },
         {
           "foreground": "#925837",  
-          "template": "\ue7a8 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}", 
+          "template": "{{ if .Full }}\ue7a8 {{ .Full }}{{ end }} ", 
           "style": "powerline",
           "type": "rust"
         },
         {
           "foreground": "#055b9c",
-          "template": "\ue798 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}", 
+          "template": "\ue798 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ", 
           "style": "powerline",
           "type": "dart"
         },
         {
           "foreground": "#ce092f",
-          "template": "\ue753 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}", 
+          "template": "\ue753 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ", 
           "style": "powerline",
           "type": "angular"
         },
@@ -142,7 +142,6 @@
           "foreground": "#ffffff",  
           "template": "\uf308 {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}}",
           "style": "powerline",
-          "trailing_diamond": "\ue0b4",
           "type": "kubectl"
         },
         {
