@@ -83,7 +83,7 @@ function jl {
 }
 
 function cb {
-    pwsh.exe -ExecutionPolicy ByPass -NoExit -Command "& 'C:\ProgramData\Anaconda\shell\condabin\conda-hook.ps1'; conda activate 'C:\ProgramData\Anaconda'; . $profile"
+    pwsh.exe -ExecutionPolicy ByPass -NoExit -Command "& 'C:\ProgramData\Anaconda\shell\condabin\conda-hook.ps1'; conda activate 'C:\ProgramData\Anaconda'; . $env:PWSH_DIR\profile.ps1"
 }
 
 # Utilities
