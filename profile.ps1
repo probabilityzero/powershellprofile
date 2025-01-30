@@ -76,14 +76,15 @@ function size {
 }
 
 function jl {
-    param (
-        [string]$option = ' '
-    )
-    jupyter notebook --no-browser $option
+    jupyter lab
 }
 
-function cb {
+function cnv {
     pwsh.exe -ExecutionPolicy ByPass -NoExit -Command "& 'C:\ProgramData\Anaconda\shell\condabin\conda-hook.ps1'; conda activate 'C:\ProgramData\Anaconda'; . $env:PWSH_DIR\profile.ps1"
+}
+
+function cnva {
+    pwsh.exe -ExecutionPolicy ByPass -NoExit -Command "& 'C:\ProgramData\Anaconda\shell\condabin\conda-hook.ps1'; conda activate alpha; . $env:PWSH_DIR\profile.ps1"
 }
 
 # Utilities
