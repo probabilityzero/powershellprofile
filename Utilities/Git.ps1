@@ -11,7 +11,7 @@ function gitn {
     git push -u origin main
 }
 
-function gitp {
+function gits {
     param (
         [string]$branch = "main" 
     )
