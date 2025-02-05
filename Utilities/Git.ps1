@@ -1,4 +1,3 @@
-# GitModule.psm1
 
 function gitin {
     param (

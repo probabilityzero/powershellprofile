@@ -1,0 +1,4 @@
+
+function sw {
+    wsl --shutdown
+}
