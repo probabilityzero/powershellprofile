@@ -1,5 +1,5 @@
 
-function gitin {
+function gitn {
     param (
         [string]$remoteUrl
     )
@@ -11,7 +11,7 @@ function gitin {
     git push -u origin main
 }
 
-function gitup {
+function gitp {
     param (
         [string]$branch = "main" 
     )
@@ -20,7 +20,7 @@ function gitup {
     git push origin $branch
 }
 
-function gitpu {
+function gitf {
     param (
         [string]$branch = "main" 
     )
@@ -28,7 +28,7 @@ function gitpu {
     git pull origin $branch
 }
 
-function gitig {
+function gitg {
     param (
         [string[]]$patterns 
     )    
@@ -64,6 +64,6 @@ function gitc {
 
     git clone $repoUrl $repoName
     Write-Output "Repository cloned into $repoName"
-    cd $repoName
+    Set-Location $repoName
     explorer.exe .
 }
