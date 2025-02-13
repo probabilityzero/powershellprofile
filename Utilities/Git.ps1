@@ -11,7 +11,7 @@ function gitn {
     git push -u origin main
 }
 
-function gits {
+function gitu {
     param (
         [string]$branch = "main" 
     )
@@ -19,8 +19,11 @@ function gits {
     git commit -m "​"
     git push origin $branch
 }
+function gits {
+    sourcegit .
+}
 
-function gitf {
+function gitp {
     param (
         [string]$branch = "main" 
     )

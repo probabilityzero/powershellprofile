@@ -1,0 +1,8 @@
+
+        {
+          "alignment": "right",
+          "foreground": "#ff4545",
+          "style": "plain",
+          "template": "({{ reason .Code }}) ",
+          "type": "status"
+        },

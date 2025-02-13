@@ -145,13 +145,6 @@
           "type": "kubectl"
         },
         {
-          "alignment": "right",
-          "foreground": "#ff4545",
-          "style": "plain",
-          "template": "({{ reason .Code }}) ",
-          "type": "status"
-        },
-        {
           "foreground": "#eebf3f",
           "style": "plain",
           "template": "󰒙 ",
