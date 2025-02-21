@@ -18,6 +18,9 @@ function ... {
 function ~ {
     cd ~
 }
+function lsf {
+    Get-ChildItem -Directory | Select-Object -ExpandProperty Name
+}
 
 function dd {
     Set-Location -Path "D:\Downloads"

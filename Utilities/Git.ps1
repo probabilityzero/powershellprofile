@@ -31,6 +31,12 @@ function gitp {
     git pull origin $branch
 }
 
+
+
+
+
+
+
 function gitg {
     param (
         [string[]]$patterns 
